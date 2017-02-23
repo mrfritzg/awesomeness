@@ -1,0 +1,149 @@
+html {
+    font-size: 60%;
+}
+
+/*
+p.foo {
+    font-size: 1rem;
+}
+
+p.bar {
+    font-size: 2rem;
+}
+
+p.gup {
+    font-size: 3rem;
+}
+*/
+
+.foo1 {
+    width: 30%;
+}
+
+img.bender {
+    height: auto;
+    width: 100%;
+}
+
+.video-outer-wrap {
+    width: 100%;
+   
+}
+
+.video-wrap {
+    position: relative;
+    padding-bottom: 55%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrap iframe, 
+.video-wrap object,
+.video-wrap embed {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+@media screen and (max-width: 360px) {
+    p.foo, 
+    p.bar,
+    p.gup {
+        font-size: 3rem;
+    }
+    
+    body {
+        background-color: yellow;
+    }
+    
+/*
+    .video-outer-wrap {
+    width: 30%;
+}
+*/
+}
+ 
+@media screen and (min-width: 360px) and (max-width: 600px) {
+    
+    p.foo, 
+    p.bar,
+    p.gup {
+        font-size: 2.5rem;
+    }
+    
+    
+    body {
+        background-color: lightblue;
+    }
+    
+/*
+    .video-outer-wrap {
+        width: 40%;
+    }
+*/
+}
+ 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+/*
+    p {
+        font-size: 18px;
+    }
+*/
+    
+    body {
+        background-color: deepskyblue;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+/*
+    p {
+        font-size: 18px;
+    }
+*/
+    
+    body {
+        background-color: lightgreen;
+    }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 1280px) { 
+/*
+    p {
+        font-size: 20px;
+    }
+*/
+    
+    body {
+        background-color: orange;
+
+     
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+/*
+    p {
+        font-size: 18px;
+    }
+*/
+    
+    body {
+        background-color: red;
+    }
+}
+ 
+@media screen and (min-width: 1440px) {
+/*
+    p {
+        font-size: 15px;
+    }
+    
+*/
+    body {
+        
+    }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive padding in CSS</title>
+        <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1">
+        
+        <style>
+            html {
+                font-size: 100%;
+            }
+/*
+            
+            nav {
+                padding: 0px;
+                margin: 0px;
+            }
+*/
+            
+            li {
+                border-radius: 4px;
+                border: 1px solid green;
+                list-style: none;
+            }
+            
+            li a {
+                font-family: Helvetica;
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: green;
+                text-decoration: none;
+                display: block;
+            }
+            
+            li:hover {
+                background-color: green;
+            }
+            
+            li a:hover {
+                color: white;
+            }
+            
+            
+            @media screen and (max-width: 480px){
+                
+                .navButton {
+                    display: block;
+                }
+                
+                button {
+                    background-color: green;
+                    color: white;
+                    width: 30px;
+                    padding: 4px;
+                    border-radius: 4px;
+                }
+                
+                nav {
+                    display:none;
+                }
+                
+                nav.show {
+                    display: block;
+                }
+
+                li {
+                    display: block;
+                    margin: 2px 0;
+                }
+
+                li a {
+                    padding: 1.26%;
+                }
+
+                img {
+                    padding: 1.26%;
+                    margin: 3px 0;
+                    width: 98%;
+                }    
+                
+            }
+            
+            @media screen and (min-width: 480px) and (max-width: 620px){
+            
+                .navButton {
+                    display: none;
+                }
+                
+                img {
+                    padding: 1.26%;
+                    margin: 1.26% 4px;
+                    width: 95%;
+                }
+
+                li {
+                    display: inline-block;
+                }
+
+                li a {
+                    padding: 4px;        
+                }
+
+                p {}
+                }
+            
+            @media screen and (min-width: 620px) and (max-width: 1024px) {
+            
+                .navButton {
+                    display: none;
+                }
+                
+                img {
+                    padding: 4px;
+                    margin: 4px;
+                    width: 47%;
+                    float: left;
+                }
+
+                p {
+                    float: right;
+                    width: 50%;
+                }
+            
+                li {
+                    display: inline-block;
+                }
+
+                 li a {
+                    padding: 4px;        
+                }
+            }
+            
+            @media screen and (min-width: 1024px) {
+            
+                .navButton {
+                    display: none;
+                }
+                
+                img {
+                    padding: 4px;
+                    margin: 4px;
+                    width: 17%;
+                    float: left;
+                }
+
+                p {
+                    float: right;
+                    width: 80%;
+                }
+
+                li {
+                    display: inline-block;
+                }
+
+                 li a {
+                    padding: 4px;        
+                }
+                
+            }
+            
+            img {
+                border: 1px solid #ccc;
+            }
+            
+        </style>
+        
+        <script>
+            function menuButton() {
+                var theMenu = document.getElementById("menu");
+                if(theMenu.className!="show") {
+                    theMenu.className = theMenu.className +"show";
+                } else {
+                    theMenu.className = "";
+                }
+            }
+        
+        
+        </script>
+    </head>
+    
+    <body>
+    
+        <div class="navButton">
+            <button onclick="menuButton() "> = </button>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">LINK 1</a></li>
+                <li><a href="#">LINK 2</a></li>
+                <li><a href="#">LINK 3</a></li>
+                <li><a href="#">LINK 4</a></li>
+            </ul>
+        </nav>
+        <img src="images/bender-small.png" alt="Bender" />
+        
+        <p>
+            Applying the box model property
+To calculate a percentage that will be proportional to the desktop design, apply the box model properties formula to this example, as follows“The percentage is easily calculated by one side of the padding divided by the total with of the page viewed in standard desktop format, or 1024px. Let's look at a real-world example. A real-world example
+Start by creating a new HTML document, and include an image followed by a paragraph of text. Next, we'll work on creating the responsive padding in CSS. I have shown the setup below:”
+        </p>
+    </body>
+</html>
